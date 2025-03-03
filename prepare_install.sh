@@ -1,8 +1,4 @@
 #!/bin/bash
-#Author:Wjz
-#Email:1072002783@qq.com
-#Blog:https://blog.csdn.net/weixin_51720652
-#Time:2022-04-26 20:02:51
 #Name:prepare_install.sh
 #Description:openstack-ocata deployment prepare
 
