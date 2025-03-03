@@ -24,7 +24,7 @@
 
 说明：可以使用迅雷或者直接在浏览器中下载。
 
-下载地址：https://raw.githubusercontent.com/wangjiazhu/openstack/master/openstack主机清单列表.xlsx
+下载地址：[https://raw.githubusercontent.com/wangjiazhu/openstack/master/openstack主机清单列表.xlsx](https://github.com/wylgit1/openstack/blob/main/openstack%E4%B8%BB%E6%9C%BA%E6%B8%85%E5%8D%95%E5%88%97%E8%A1%A8.xlsx)
 
 ###### 用户提交表格
 
