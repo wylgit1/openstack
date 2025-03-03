@@ -1,5 +1,3 @@
-# openstack
-ansible-playbook剧本部署openstack
 # ansible-playbook剧本自动化部署openstack-ocata
 
 #### openstack节点安排
