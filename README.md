@@ -81,3 +81,10 @@ ansible-playbook -v /etc/ansible/openstack/roles/site.yaml
 ![](https://raw.githubusercontent.com/wjzcscloud/MarkTextImg/master/image-20220424214247918.png)
 
 ![](https://raw.githubusercontent.com/wjzcscloud/MarkTextImg/master/image-20220424214329097.png)
+
+1.技术选型与方案设计：基于一次开发、永久使用原则，选定Ansbile-Playbook作为自动化工具，确定“Excel清单+Ansible Role+Playbook整合”的核心流程
+2.Ansible Role开发：拆解OpenStack各服务组件部署步骤，为Keystone、Glance、Nova、Neutron等核心服务编写独立Role,每个Role需要包含“环境检查、依赖安装、配置文件模板、服务启动、状态验证”全流程，确保每个role可以单独复用
+3.Excel清单与解析脚本开发：定义Excel主机清单表结构（含主机IP,主机角色（控制节点/计算节点）、操作系统、用户名、密码、存储路径等字段），编写python脚本实现“读取Excel->生成Ansible hosts文件->填充Playbook变量”的自动化
+4.Playbook整合与测试：将各个服务Role按部署依赖顺序(如先部署Keystone认证服务、再部署Glance、Nova)整合为总Playbook
+
+
